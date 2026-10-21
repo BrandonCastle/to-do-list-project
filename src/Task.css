@@ -1,0 +1,16 @@
+.task-container{
+    display: flex;
+    margin-left: 20px;
+    padding: 15px;
+
+
+}
+
+.task{
+    font-size: 20px;
+}
+
+.task-checkbox {
+    margin-left: auto;
+    width: 15px;
+}

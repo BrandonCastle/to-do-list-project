@@ -1,0 +1,18 @@
+.input-form-button {
+    padding: 10px 25px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(116, 250, 116);
+    color: white;
+   
+}
+
+.input-form-container {
+    margin-top: auto;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+    margin-bottom: 10px;
+    
+}

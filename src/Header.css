@@ -1,0 +1,13 @@
+.header-container {
+    height: 50px;
+    background-color: rgb(116, 250, 116);
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-text{
+    align-items: center;
+    color:white
+}
