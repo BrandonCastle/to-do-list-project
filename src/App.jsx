@@ -10,9 +10,7 @@ function App() {
   const [showForm, setShowForm] = useState(false)
   const [toDoList, setToDoList] = useState([]);
 
-useEffect(() => {
-  console.log(toDoList)
-}, [toDoList])
+
   return (
     <>
       <Header />
