@@ -10,7 +10,6 @@ export function InputForm( {showForm, setShowForm}) {
     } else {
       setShowForm(true);
     }
-    console.log(showForm);
   };
   return (
     <>

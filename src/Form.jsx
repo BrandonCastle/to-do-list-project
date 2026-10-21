@@ -13,6 +13,14 @@ export function Form({ setShowForm, setToDoList }) {
   const retrieveText = (event) => {
     setText(event.target.value);
   };
+
+  const keyShortcut = (event) => {
+    if(event.key === "Enter"){
+        insertToDo()
+    } else if(event.key === "Escape") {
+        setShowForm(false)
+    }
+  }
   return (
     <div className="backdrop">
       <div className="form-container">
@@ -22,9 +30,12 @@ export function Form({ setShowForm, setToDoList }) {
           onChange={retrieveText}
           placeholder="insert to do list here..."
           className="form-input"
+          onKeyDown={keyShortcut}
         ></textarea>
         <div className="form-button-container">
-          <button className="form-button" onClick={insertToDo}>
+          <button 
+          className="form-button" 
+          onClick={insertToDo}>
             Confirm
           </button>
         </div>
