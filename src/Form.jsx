@@ -5,6 +5,7 @@ export function Form({ setShowForm, setToDoList }) {
   const [text, setText] = useState("");
 
   const insertToDo = () => {
+    if(text==="") return
     setToDoList((current) => [...current, {Task: text}])
     setShowForm(false);
   };
