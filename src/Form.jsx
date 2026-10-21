@@ -16,6 +16,7 @@ export function Form({ setShowForm, setToDoList }) {
 
   const keyShortcut = (event) => {
     if(event.key === "Enter"){
+        event.preventDefault()
         insertToDo()
     } else if(event.key === "Escape") {
         setShowForm(false)
@@ -31,6 +32,7 @@ export function Form({ setShowForm, setToDoList }) {
           placeholder="insert to do list here..."
           className="form-input"
           onKeyDown={keyShortcut}
+          autoFocus
         ></textarea>
         <div className="form-button-container">
           <button 
