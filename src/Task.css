@@ -2,12 +2,15 @@
     display: flex;
     margin-left: 20px;
     padding: 15px;
+    max-height: 480px;
 
 
 }
 
 .task{
     font-size: 20px;
+    max-width: 50px;
+    overflow: hideen;
 }
 
 .task-checkbox {

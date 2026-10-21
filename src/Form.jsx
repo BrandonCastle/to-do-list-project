@@ -11,7 +11,12 @@ export function Form({ setShowForm, setToDoList }) {
   };
 
   const retrieveText = (event) => {
-    setText(event.target.value);
+    const context = event.target.value
+    if(context.length > 30) {
+        alert("Max Character capacity")
+        return
+    }
+    setText(context);
   };
 
   const keyShortcut = (event) => {
@@ -29,7 +34,7 @@ export function Form({ setShowForm, setToDoList }) {
         <textarea
           value={text}
           onChange={retrieveText}
-          placeholder="insert to do list here..."
+          placeholder="insert to do list here...(max 30 characters)"
           className="form-input"
           onKeyDown={keyShortcut}
           autoFocus
