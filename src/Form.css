@@ -1,0 +1,55 @@
+.backdrop {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);;
+    backdrop-filter: blur(6px);
+    
+}
+
+.form-container {
+    background-color: white;
+    width: 250px;
+    height: 300px;
+    border-radius: 15px;
+    display:flex;
+    flex-direction: column;
+    /* outline: 2px solid red; */
+    
+}
+
+.form-header {
+    padding: 10px;
+    color: white;
+    background-color: rgb(116, 250, 116);
+    border-radius: 15px 15px 0 0;
+}
+
+.form-input {
+    margin: 5px 5px 0px 5px;
+    height: 100%;
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 5px;
+}
+
+.form-button-container {
+    margin-top: auto;
+    /* background-color: red; */
+    display: flex;
+    justify-content: flex-end;
+    padding:5px;
+    
+}
+
+.form-button{
+    margin-right: 10px;
+    background-color: rgb(116, 250, 116);
+    border: none;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+}
