@@ -1,7 +1,8 @@
 import "./InputForm.css";
+import {useState} from 'react'
 
 
-export function InputForm( {showForm, setShowForm}) {
+export function InputForm( {showForm, setShowForm, setDeleteMode, deleteMode}) {
 
 
   const displayForm = () => {
@@ -11,10 +12,20 @@ export function InputForm( {showForm, setShowForm}) {
       setShowForm(true);
     }
   };
+
+  const deleteForm = () => {
+    if (deleteMode) {
+      setDeleteMode(false);
+    } else {
+      setDeleteMode(true);
+    }
+    console.log(deleteMode)
+  }
+
   return (
     <>
       <div className="input-form-container"> 
-        <button className="input-form-delete">Delete</button>
+        <button onClick={deleteForm} className="input-form-delete">Delete</button>
         <button onClick={displayForm} className="input-form-button">
           Add
         </button>

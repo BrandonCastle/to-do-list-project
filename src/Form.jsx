@@ -6,7 +6,7 @@ export function Form({ setShowForm, setToDoList }) {
 
   const insertToDo = () => {
     if(text==="") return
-    setToDoList((current) => [...current, {Task: text}])
+    setToDoList((current) => [...current, {Task: text, Id: crypto.randomUUID()}])
     setShowForm(false);
   };
 
