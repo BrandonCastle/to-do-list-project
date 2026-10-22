@@ -14,6 +14,7 @@ export function InputForm( {showForm, setShowForm}) {
   return (
     <>
       <div className="input-form-container"> 
+        <button className="input-form-delete">Delete</button>
         <button onClick={displayForm} className="input-form-button">
           Add
         </button>

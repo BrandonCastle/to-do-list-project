@@ -1,0 +1,3 @@
+1. Add Delete task functionality
+2. save to local storage/ load from local storage.
+3. Add Scrolling functionality
